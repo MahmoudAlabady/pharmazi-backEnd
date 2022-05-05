@@ -11,7 +11,9 @@ MySQL – A node.js driver for MySQL. It is written in JavaScript, does not requ
 
 # Start App Server
 npm init -y
-npm i
+
+npm i 
+
 nodemon .\index.js
 
 # The API exposes the following REST routes:
