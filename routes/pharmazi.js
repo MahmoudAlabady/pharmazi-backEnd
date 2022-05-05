@@ -10,7 +10,7 @@ const connection = require('../db/mySQL');
 router.put('/updateDiscount', (req, res) =>{
     let result=connection.query(
         `UPDATE seller_products
-    INNER JOIN updatee ON updatee.Seller_id = seller_products.seller_id   
+    INNER JOIN updatee ON updateee.Seller_id = seller_products.seller_id   
     SET seller_products.discount = updatee.Discount
     WHERE seller_products.product_id = updatee.PHRItemID`,
         function(err, results, fields) {
